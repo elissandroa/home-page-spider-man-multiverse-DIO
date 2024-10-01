@@ -1,0 +1,20 @@
+function handleMouseEnter () {
+    this.classList.add('s-card--hovered');
+}
+
+function handleMouseLeave() {
+    this.classList.remove('s-card--hovered');
+}
+
+function addEnventListenersTocard() {
+    const cardElements = document.getElementsByClassName("s-card");
+
+    for (let i = 0; cardElements.length; i++){
+        const card  = cardElements[i];
+        card.addEventListener('mouseenter',  handleMouseEnter);
+        card.addEventListener('mouseleave', handleMouseLeave)
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", addEnventListenersTocard, false);
