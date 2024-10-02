@@ -18,5 +18,9 @@ function addEnventListenersTocard() {
     }
 }
 
+function selectCarouselItem(selectedItem){
+    console.log("Selecionando item:",selectedItem)
+}
+
 
 document.addEventListener("DOMContentLoaded", addEnventListenersTocard, false);
