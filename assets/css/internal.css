@@ -20,13 +20,30 @@
   left: 0;
   top: 0;
   z-index: 1;
-  background-color: black;
 }
 
 .s-wrapper .s-main-content{
   height: 100%;
   width: 100%;
   background-color: gray;
-  padding-left: 30px;
+  padding-left: 130px;
   position: relative;
+}
+
+.s-wrapper .s-main-content__top {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.s-wrapper .s-main-content__bottom {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.s-wrapper .s-main-content .s-logo img {
+  margin: 50px 0 30px;
 }
