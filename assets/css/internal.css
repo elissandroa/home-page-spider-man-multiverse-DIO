@@ -1,13 +1,14 @@
 @import url('reset.css');
 @import url('globla.css');
+@import url('./components/_pills.css');
 @import url('./components/_navigator.css');
 
 .s-wrapper {
-    display: flex;
-    height: 100vh;
-    flex-flow: row nowrap; 
-    background-color: aqua; 
-  }
+  display: flex;
+  height: 100vh;
+  flex-flow: row nowrap;
+  background-color: aqua;
+}
 
 .s-wrapper .s-left-column {
   width: 100px;
@@ -22,7 +23,7 @@
   z-index: 1;
 }
 
-.s-wrapper .s-main-content{
+.s-wrapper .s-main-content {
   height: 100%;
   width: 100%;
   background-color: gray;
@@ -46,4 +47,20 @@
 
 .s-wrapper .s-main-content .s-logo img {
   margin: 50px 0 30px;
+}
+
+.s-wrapper .s-main-content__top .s-description {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.s-wrapper .s-main-content__top .s-description .s-description__text p {
+  color: white;
+  line-height: 170%;
+}
+
+.s-wrapper .s-main-content__top .s-description .pills {
+  margin-bottom: 20px;
 }
